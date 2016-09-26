@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="qianfeng.a3_5resolver_application.MainActivity">
+
+    <Button
+        android:onClick="onclick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="向USER表中添加数据" />
+
+    <Button
+        android:onClick="onclick2"
+        android:layout_width="wrap_content"
+        android:text="向FOOD表中添加数据"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="deleteAllUser"
+        android:layout_width="wrap_content"
+        android:text="删除User表中所有数据"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="deleteAllFood"
+        android:layout_width="wrap_content"
+        android:text="删除Food表中所有数据"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="deleteUserById"
+        android:layout_width="wrap_content"
+        android:text="根据uri中的id解析来删除指定的条目"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="deleteUserByKeywords"
+        android:layout_width="wrap_content"
+        android:text="根据uri中的username关键字来删除所有符合的条目"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="queryAllUser"
+        android:text="查询User中所有数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="queryUser"
+        android:text="查询User中指定id的数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="updateUser"
+        android:text="修改User中所有被指定条件的数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="updateUserById"
+        android:text="修改User中指定id的数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
